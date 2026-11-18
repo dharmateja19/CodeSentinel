@@ -1,0 +1,5 @@
+
+.example {
+    width: expression(alert('test'));
+    background: url("javascript:alert('test')");
+}
