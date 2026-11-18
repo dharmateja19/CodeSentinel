@@ -1,29 +1,7 @@
 {
-  "title": "CodeSentinel",
-  "tagline": "Detect. Analyze. Improve.",
-  "description": "An AI-powered code auditing platform that scans software repositories for potential security vulnerabilities, coding gaps, unfinished implementations, and code-quality issues. It combines static analysis with AI-powered validation to explain findings, assess potential impact, and recommend fixes.",
-  "track": "AI triage",
-  "repository": "https://github.com/dharmateja19/CodeSentinel",
-  "demo_video": "",
-  "live_demo": "",
-  "technologies": [
-    "Python",
-    "FastAPI",
-    "React",
-    "Vite",
-    "Tailwind CSS",
-    "Google Gemini",
-    "Ollama",
-    "Static Analysis"
-  ],
-  "features": [
-    "Security vulnerability detection",
-    "Code slop detection",
-    "Coding gap analysis",
-    "Loose ends detection",
-    "AI-powered finding validation",
-    "Actionable remediation recommendations",
-    "Interactive audit dashboard",
-    "JSON report export"
-  ]
+  "language": "python",
+  "install": "python -m pip install -r requirements.txt && cd frontend && npm install",
+  "test": "python -m unittest discover -v",
+  "start": "python -m uvicorn app.main:app --host 0.0.0.0 --port 8000",
+  "port": 8000
 }
