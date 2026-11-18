@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #292d27;
+  background: #f7f7f3;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: #dce5d5;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #e9eae3;
+  border-radius: 14px;
+}
+
+.muted {
+  color: #777d72;
+}
+
+.severity-critical { color: #b42318; background: #fef0ee; }
+.severity-high { color: #bd5b28; background: #fff2e9; }
+.severity-medium { color: #96701b; background: #fbf5df; }
+.severity-low { color: #52734d; background: #edf4e9; }
+.severity-info { color: #6b7280; background: #f0f1ef; }
+
+.verdict-confirmed { color: #52734d; background: #edf4e9; }
+.verdict-likely { color: #96701b; background: #fbf5df; }
+.verdict-false_positive { color: #777d72; background: #f0f1ef; }
+.verdict-uncertain { color: #a45d32; background: #fff2e9; }
